@@ -1,5 +1,6 @@
-import { Home, Wrench, Phone, Info } from "lucide-react";
+import { Home, Wrench, Phone, Info, X } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import {
   Sidebar,
   SidebarContent,
@@ -9,6 +10,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarHeader,
   useSidebar,
 } from "@/components/ui/sidebar";
 
@@ -22,6 +24,7 @@ const navigationItems = [
 export function AppSidebar() {
   const location = useLocation();
   const currentPath = location.pathname;
+  const { setOpenMobile } = useSidebar();
 
   const isActive = (path: string) => currentPath === path;
   const getNavCls = ({ isActive }: { isActive: boolean }) =>
@@ -29,6 +32,17 @@ export function AppSidebar() {
 
   return (
     <Sidebar className="md:hidden">
+      <SidebarHeader className="flex flex-row items-center justify-between p-4 border-b">
+        <span className="font-semibold">Menu</span>
+        <Button 
+          variant="ghost" 
+          size="sm" 
+          onClick={() => setOpenMobile(false)}
+          className="h-8 w-8 p-0"
+        >
+          <X className="h-4 w-4" />
+        </Button>
+      </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Navigation</SidebarGroupLabel>
