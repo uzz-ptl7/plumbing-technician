@@ -28,10 +28,7 @@ export function AppSidebar() {
     isActive ? "bg-muted text-primary font-medium" : "hover:bg-muted/50";
 
   return (
-    <Sidebar
-      className="md:hidden"
-      collapsible="icon"
-    >
+    <Sidebar className="md:hidden">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Navigation</SidebarGroupLabel>
@@ -40,7 +37,10 @@ export function AppSidebar() {
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url} className={getNavCls({ isActive: isActive(item.url) })}>
+                    <a 
+                      href={item.url} 
+                      className={getNavCls({ isActive: isActive(item.url) })}
+                    >
                       <item.icon className="mr-2 h-4 w-4" />
                       <span>{item.title}</span>
                     </a>
@@ -48,6 +48,21 @@ export function AppSidebar() {
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+
+        {/* Emergency contact in sidebar */}
+        <SidebarGroup>
+          <SidebarGroupLabel>Emergency Contact</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <div className="p-4 bg-emergency/10 rounded-lg">
+              <div className="text-sm font-medium text-emergency mb-2">
+                24/7 Emergency Service
+              </div>
+              <div className="text-lg font-bold text-emergency">
+                +250 788 123 456
+              </div>
+            </div>
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
