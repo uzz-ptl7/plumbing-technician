@@ -9,11 +9,12 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <div className="min-h-screen bg-background w-full">
+    <div className="min-h-screen bg-background">
+      <SidebarProvider>
+        <AppSidebar />
+        
         {/* Header */}
-        <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 shrink-0">
+        <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center gap-4 md:flex-1">
@@ -52,14 +53,14 @@ const Index = () => {
         </header>
 
         {/* Main Content */}
-        <main className="flex-1">
+        <main>
           <HeroSection />
           <ServicesSection />
           <ContactSection />
           <Footer />
         </main>
-      </div>
-    </SidebarProvider>
+      </SidebarProvider>
+    </div>
   );
 };
 
