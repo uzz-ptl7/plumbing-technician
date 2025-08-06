@@ -1,19 +1,14 @@
+import { Phone, Wrench, Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
-import { Phone, Wrench } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
 
-const Index = () => {
+const Header = () => {
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
         <AppSidebar />
         <div className="flex-1">
-          {/* Header */}
           <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
             <div className="container mx-auto px-4">
               <div className="flex items-center justify-between h-16">
@@ -49,18 +44,10 @@ const Index = () => {
               </div>
             </div>
           </header>
-
-          {/* Main Content */}
-          <main>
-            <HeroSection />
-            <ServicesSection />
-            <ContactSection />
-            <Footer />
-          </main>
         </div>
       </div>
     </SidebarProvider>
   );
 };
 
-export default Index;
+export default Header;

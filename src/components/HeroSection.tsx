@@ -14,7 +14,7 @@ const HeroSection = () => {
                 <span className="font-medium">Licensed & Insured Professional</span>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Expert Plumbing
+                Professional Plumbing
                 <span className="block text-primary">Solutions</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-lg">
