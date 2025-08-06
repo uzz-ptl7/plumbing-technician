@@ -31,31 +31,32 @@ export function AppSidebar() {
     isActive ? "bg-muted text-primary font-medium" : "hover:bg-muted/50";
 
   return (
-    <Sidebar className="md:hidden" side="left">
-      <SidebarHeader className="flex flex-row items-center justify-between p-4 border-b">
-        <span className="font-semibold">Menu</span>
+    <Sidebar className="md:hidden" side="left" variant="sidebar">
+      <SidebarHeader className="flex flex-row items-center justify-between p-4 border-b border-border">
+        <span className="font-semibold text-foreground">Menu</span>
         <Button 
           variant="ghost" 
           size="sm" 
           onClick={() => setOpenMobile(false)}
-          className="h-8 w-8 p-0"
+          className="h-8 w-8 p-0 hover:bg-accent"
         >
           <X className="h-4 w-4" />
         </Button>
       </SidebarHeader>
-      <SidebarContent>
-        <SidebarGroup>
-          <SidebarGroupLabel>Navigation</SidebarGroupLabel>
+      <SidebarContent className="px-0">
+        <SidebarGroup className="px-4">
+          <SidebarGroupLabel className="text-muted-foreground">Navigation</SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <SidebarMenu className="space-y-1">
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton asChild className="w-full">
                     <a 
                       href={item.url} 
-                      className={getNavCls({ isActive: isActive(item.url) })}
+                      className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors ${getNavCls({ isActive: isActive(item.url) })}`}
+                      onClick={() => setOpenMobile(false)}
                     >
-                      <item.icon className="mr-2 h-4 w-4" />
+                      <item.icon className="h-4 w-4" />
                       <span>{item.title}</span>
                     </a>
                   </SidebarMenuButton>
@@ -66,10 +67,10 @@ export function AppSidebar() {
         </SidebarGroup>
 
         {/* Emergency contact in sidebar */}
-        <SidebarGroup>
-          <SidebarGroupLabel>Emergency Contact</SidebarGroupLabel>
+        <SidebarGroup className="px-4 mt-6">
+          <SidebarGroupLabel className="text-muted-foreground">Emergency Contact</SidebarGroupLabel>
           <SidebarGroupContent>
-            <div className="p-4 bg-emergency/10 rounded-lg">
+            <div className="p-4 bg-emergency/10 border border-emergency/20 rounded-lg">
               <div className="text-sm font-medium text-emergency mb-2">
                 24/7 Emergency Service
               </div>

@@ -4,24 +4,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
+    <section id="contact" className="py-16 lg:py-20 bg-background w-full">
+      <div className="container mx-auto px-4 w-full">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to solve your plumbing problems? Contact us today for fast, 
             professional service you can trust.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Contact Info */}
           <div className="space-y-6">
             <Card className="border-0 shadow-md">
               <CardHeader className="pb-4">
-                <CardTitle className="flex items-center gap-3 text-lg">
+                <CardTitle className="flex items-center gap-3 text-base lg:text-lg">
                   <div className="w-10 h-10 bg-emergency/10 rounded-lg flex items-center justify-center">
                     <Phone className="h-5 w-5 text-emergency" />
                   </div>
@@ -29,14 +29,14 @@ const ContactSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold text-emergency mb-2">+250 788 123 456</div>
-                <p className="text-muted-foreground">Available 24/7 for urgent plumbing emergencies in Kigali</p>
+                <div className="text-xl lg:text-2xl font-bold text-emergency mb-2">+250 788 123 456</div>
+                <p className="text-sm lg:text-base text-muted-foreground">Available 24/7 for urgent plumbing emergencies in Kigali</p>
               </CardContent>
             </Card>
             
             <Card className="border-0 shadow-md">
               <CardHeader className="pb-4">
-                <CardTitle className="flex items-center gap-3 text-lg">
+                <CardTitle className="flex items-center gap-3 text-base lg:text-lg">
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
@@ -45,13 +45,13 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <div className="font-semibold mb-2">info@kigaliplumbing.rw</div>
-                <p className="text-muted-foreground">We'll respond within 2 hours during business hours</p>
+                <p className="text-sm lg:text-base text-muted-foreground">We'll respond within 2 hours during business hours</p>
               </CardContent>
             </Card>
             
             <Card className="border-0 shadow-md">
               <CardHeader className="pb-4">
-                <CardTitle className="flex items-center gap-3 text-lg">
+                <CardTitle className="flex items-center gap-3 text-base lg:text-lg">
                   <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
                     <MapPin className="h-5 w-5 text-accent" />
                   </div>
@@ -60,14 +60,14 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <div className="font-semibold mb-2">Kigali City & Surrounding Areas</div>
-                <p className="text-muted-foreground">Serving Nyarugenge, Gasabo, and Kicukiro districts</p>
+                <p className="text-sm lg:text-base text-muted-foreground">Serving Nyarugenge, Gasabo, and Kicukiro districts</p>
               </CardContent>
             </Card>
 
             {/* Social Media */}
             <Card className="border-0 shadow-md">
               <CardHeader className="pb-4">
-                <CardTitle className="text-lg">Follow Us</CardTitle>
+                <CardTitle className="text-base lg:text-lg">Follow Us</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex gap-4">
@@ -86,9 +86,9 @@ const ContactSection = () => {
           </div>
           
           {/* Business Hours */}
-          <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8">
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Business Hours</h3>
+          <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-6 lg:p-8">
+            <div className="mb-6 lg:mb-8">
+              <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-4">Business Hours</h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Monday - Friday</span>
@@ -135,7 +135,7 @@ const ContactSection = () => {
           <div className="space-y-6">
             <Card className="border-0 shadow-md overflow-hidden">
               <CardHeader className="pb-4">
-                <CardTitle className="text-lg">Find Us</CardTitle>
+                <CardTitle className="text-base lg:text-lg">Find Us</CardTitle>
               </CardHeader>
               <CardContent className="p-0">
                 <iframe
