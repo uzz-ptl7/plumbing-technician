@@ -35,12 +35,12 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Emergency Plumbing</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Leak Repairs</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Pipe Installation</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Drain Cleaning</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Water Heater Service</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Bathroom Remodeling</a></li>
+              <li><p className="hover:text-primary-foreground transition-colors">Emergency Plumbing</p></li>
+              <li><p className="hover:text-primary-foreground transition-colors">Leak Repairs</p></li>
+              <li><p className="hover:text-primary-foreground transition-colors">Pipe Installation</p></li>
+              <li><p className="hover:text-primary-foreground transition-colors">Drain Cleaning</p></li>
+              <li><p className="hover:text-primary-foreground transition-colors">Water Heater Service</p></li>
+              <li><p className="hover:text-primary-foreground transition-colors">Bathroom Remodeling</p></li>
             </ul>
           </div>
 
@@ -48,12 +48,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Service Areas</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Testimonials</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a></li>
+              <li><a href="#home" className="hover:text-primary-foreground transition-colors">About Us</a></li>
+              <li><a href="#services" className="hover:text-primary-foreground transition-colors">Services</a></li>
+              <li><a href="#contact" className="hover:text-primary-foreground transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -86,15 +83,19 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
             <div>
-              © 2024 PLUMBING TECHNICIAN. All rights reserved.
+              © 2025 PLUMBING TECHNICIAN. All rights reserved.
             </div>
-            <div className="flex gap-1">
-              <span>RDB License #PL-2024-KGL-789</span>
-              <span>•</span>
-              <span>5-Year Warranty</span>
-              <span>•</span>
-              <span>Fully Insured</span>
-            </div>
+            <p className="text-gray-400 text-sm">
+              Made with ❤️ in Rwanda by the{" "}
+              <a 
+                href="https://www.sitecraftersz.co/" 
+                className="underline hover:text-white transition-colors duration-500" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Sitecrafters Team
+              </a>
+            </p>
           </div>
         </div>
       </div>

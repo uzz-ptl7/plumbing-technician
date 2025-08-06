@@ -37,8 +37,16 @@ All colors MUST be HSL.
     --ring: 210 100% 45%;
 
     /* Custom design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(210 100% 45%), hsl(200 100% 55%));
-    --accent-gradient: linear-gradient(135deg, hsl(25 95% 55%), hsl(35 95% 60%));
+    --hero-gradient: linear-gradient(
+      135deg,
+      hsl(210 100% 45%),
+      hsl(200 100% 55%)
+    );
+    --accent-gradient: linear-gradient(
+      135deg,
+      hsl(25 95% 55%),
+      hsl(35 95% 60%)
+    );
     --section-bg: 210 25% 96%;
     --emergency: 0 85% 55%;
     --emergency-foreground: 0 0% 100%;

@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-plumber.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-gradient-to-r from-primary/10 via-background to-secondary/50 w-full">
+    <section id="home" className="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-gradient-to-r from-primary/10 via-background to-secondary/50 w-full">
       <div className="container mx-auto px-4 py-16 lg:py-20 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
@@ -44,28 +44,13 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="relative order-1 lg:order-2">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={heroImage} 
-                alt="Professional plumber at work" 
-                className="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-            </div>
-            <div className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-card p-4 lg:p-6 rounded-xl shadow-lg border">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="h-4 w-4 lg:h-5 lg:w-5 text-accent fill-current" />
-                  ))}
-                </div>
-                <div className="text-sm">
-                  <div className="font-semibold">500+ Happy Customers</div>
-                  <div className="text-muted-foreground">This month alone</div>
-                </div>
-              </div>
-            </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <img 
+              src={heroImage} 
+              alt="Professional plumber at work" 
+              className="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
           </div>
         </div>
       </div>
