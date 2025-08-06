@@ -36,7 +36,7 @@ const Index = () => {
             
             <Button variant="emergency" size="sm">
               <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">(555) 123-PIPE</span>
+              <span className="hidden sm:inline">+250 788 123 456</span>
             </Button>
           </div>
         </div>

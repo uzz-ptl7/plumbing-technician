@@ -26,7 +26,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="emergency" size="lg" className="text-lg">
                 <Phone className="h-5 w-5" />
-                Call Now: (555) 123-PIPE
+                Call Now: +250 788 123 456
               </Button>
               <Button variant="hero" size="lg" className="text-lg">
                 Get Free Quote

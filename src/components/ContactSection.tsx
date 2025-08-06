@@ -29,8 +29,8 @@ const ContactSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold text-emergency mb-2">(555) 123-PIPE</div>
-                <p className="text-muted-foreground">Available 24/7 for urgent plumbing emergencies</p>
+                <div className="text-2xl font-bold text-emergency mb-2">+250 788 123 456</div>
+                <p className="text-muted-foreground">Available 24/7 for urgent plumbing emergencies in Kigali</p>
               </CardContent>
             </Card>
             
@@ -44,7 +44,7 @@ const ContactSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="font-semibold mb-2">info@plumbingtechnician.com</div>
+                <div className="font-semibold mb-2">info@kigaliplumbing.rw</div>
                 <p className="text-muted-foreground">We'll respond within 2 hours during business hours</p>
               </CardContent>
             </Card>
@@ -59,8 +59,8 @@ const ContactSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="font-semibold mb-2">Greater Metro Area</div>
-                <p className="text-muted-foreground">Serving all neighborhoods within 25 miles</p>
+                <div className="font-semibold mb-2">Kigali City & Surrounding Areas</div>
+                <p className="text-muted-foreground">Serving Nyarugenge, Gasabo, and Kicukiro districts</p>
               </CardContent>
             </Card>
 
@@ -92,11 +92,11 @@ const ContactSection = () => {
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Monday - Friday</span>
-                  <span className="font-semibold">7:00 AM - 7:00 PM</span>
+                  <span className="font-semibold">7:00 AM - 6:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Saturday</span>
-                  <span className="font-semibold">8:00 AM - 5:00 PM</span>
+                  <span className="font-semibold">8:00 AM - 4:00 PM</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-muted-foreground">Sunday</span>
@@ -122,10 +122,10 @@ const ContactSection = () => {
               
               <div className="text-center">
                 <div className="text-sm text-muted-foreground mb-2">
-                  Licensed • Bonded • Insured
+                  Licensed • Certified • Insured
                 </div>
                 <div className="text-xs text-muted-foreground">
-                  License #PL-123456 | BBB A+ Rating
+                  RDB License #PL-2024-KGL-789 | 5-Year Warranty
                 </div>
               </div>
             </div>
@@ -139,14 +139,14 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent className="p-0">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1579718854243!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.4956943123456!2d30.061865!3d-1.942269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2srw!4v1579718854243!5m2!1sen!2srw"
                   width="100%"
                   height="250"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Our Location"
+                  title="Our Location in Kigali"
                 ></iframe>
               </CardContent>
             </Card>
@@ -156,8 +156,8 @@ const ContactSection = () => {
                 <div className="text-center">
                   <div className="font-semibold mb-2">Our Office</div>
                   <div className="text-sm text-muted-foreground">
-                    123 Main Street<br />
-                    Your City, State 12345
+                    KG 15 Ave, Nyarugenge<br />
+                    Kigali, Rwanda
                   </div>
                 </div>
               </CardContent>

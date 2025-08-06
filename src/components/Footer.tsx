@@ -63,15 +63,15 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary-foreground/60" />
-                <span>(555) 123-PIPE</span>
+                <span>+250 788 123 456</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary-foreground/60" />
-                <span>info@plumbingtechnician.com</span>
+                <span>info@kigaliplumbing.rw</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-primary-foreground/60 mt-0.5" />
-                <span>123 Main Street<br />Your City, State 12345</span>
+                <span>KG 15 Ave, Nyarugenge<br />Kigali, Rwanda</span>
               </div>
             </div>
             
@@ -89,9 +89,9 @@ const Footer = () => {
               © 2024 PLUMBING TECHNICIAN. All rights reserved.
             </div>
             <div className="flex gap-1">
-              <span>Licensed #PL-123456</span>
+              <span>RDB License #PL-2024-KGL-789</span>
               <span>•</span>
-              <span>BBB A+ Rating</span>
+              <span>5-Year Warranty</span>
               <span>•</span>
               <span>Fully Insured</span>
             </div>
