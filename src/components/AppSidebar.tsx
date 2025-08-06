@@ -31,7 +31,7 @@ export function AppSidebar() {
     isActive ? "bg-muted text-primary font-medium" : "hover:bg-muted/50";
 
   return (
-    <Sidebar className="md:hidden">
+    <Sidebar className="md:hidden" side="left">
       <SidebarHeader className="flex flex-row items-center justify-between p-4 border-b">
         <span className="font-semibold">Menu</span>
         <Button 
